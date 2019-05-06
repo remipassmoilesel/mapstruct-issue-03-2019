@@ -20,11 +20,9 @@ public interface PersonMapper {
     // Cause a stackoverlow. Why ?
     // List<PersonEntity> toVavrEntityList(List<PersonDto> dtos);
 
-    // The same !
-
-    // default List<PersonEntity> toVavrEntityList(List<PersonDto> dtos){
-    //     return List.ofAll(toEntities(dtos.asJava()));
-    // }
+    default List<PersonEntity> toVavrEntityList(List<PersonDto> dtos) {
+        return List.ofAll(toEntities(dtos.asJava()));
+    }
 
     @Mappings(
             @Mapping(source = "ageOfPerson", target = "age")
