@@ -27,7 +27,7 @@ public class MapstructTest {
 
     @Test
     public void toVavrLists() {
-        val entities = mapper.toVavrEntityList(List.ofAll(dtos));
+        val entities = mapper.toEntitiesVavr(List.ofAll(dtos));
         System.out.println(entities);
     }
 }
