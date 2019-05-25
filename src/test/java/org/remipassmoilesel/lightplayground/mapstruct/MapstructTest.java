@@ -25,11 +25,11 @@ public class MapstructTest {
         System.out.println(mapper.toDtosWithFancyRules(entities));
     }
 
-    @Test
-    public void toVavrLists() {
-        val entities = mapper.toEntitiesVavr(List.ofAll(dtos));
-        System.out.println(entities);
-    }
+//    @Test
+//    public void toVavrLists() {
+//        val entities = mapper.toEntitiesVavr(List.ofAll(dtos));
+//        System.out.println(entities);
+//    }
 
     @Test
     public void toVavrLists2() {

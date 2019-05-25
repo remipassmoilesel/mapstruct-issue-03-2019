@@ -18,7 +18,7 @@ public interface PersonMapper {
     java.util.List<PersonEntity> toEntities(java.util.List<PersonDto> dtos);
 
     // Cause a stackoverlow. Why ?
-    List<PersonEntity> toEntitiesVavr(List<PersonDto> dtos);
+    // List<PersonEntity> toEntitiesVavr(List<PersonDto> dtos);
 
     default List<PersonEntity> toEntitiesVavrDefaultImplementation(List<PersonDto> dtos) {
         return dtos.map(this::toEntity);
