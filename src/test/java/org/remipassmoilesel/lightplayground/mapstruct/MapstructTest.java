@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class MapstructTest {
 
-    final PersonMapper mapper = Mappers.getMapper(PersonMapper.class &);
+    final PersonMapper mapper = Mappers.getMapper(PersonMapper.class);
 
     final java.util.List<PersonDto> dtos = Arrays.asList(
             PersonDto.builder().age(25).firstName("firstname 1").lastName("lastname 1").build(),
