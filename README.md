@@ -10,3 +10,6 @@ Getting started:
 
     $ git clone https://github.com/remipassmoilesel/mapstruct-issue-03-2019
     $ cd mapstruct-issue-03-2019 && ./gradlew test
+
+
+See: https://github.com/remipassmoilesel/mapstruct-issue-03-2019/blob/master/src/test/java/org/remipassmoilesel/lightplayground/mapstruct/MapstructTest.java
